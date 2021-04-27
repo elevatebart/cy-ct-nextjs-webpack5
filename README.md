@@ -6,7 +6,7 @@ Cypress component testing was also added.
 
 An example of a test can be found at [components/Button/Button.spec.jsx](./components/Button/Button.spec.jsx)
 
-## How Cypress compoennt testing was added
+## How Cypress component testing was added
 
 First install cypress specific dependencies
 
