@@ -1,5 +1,51 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Cypress component testing was also added.
+
+[Learn more](https://docs.cypress.io/guides/component-testing/introduction)
+
+An example of a test can be found at [components/Button/Button.spec.jsx](./components/Button/Button.spec.jsx)
+
+## How Cypress compoennt testing was added
+
+First install cypress specific dependencies
+
+```bash
+yarn add --develop cypress @cypress/react @cypress/webpack-dev-server
+```
+
+Now we notice that when we launch the cypress server, it fails saying it is missing `webpack-dev-server` then `html-webpack-plugin`
+We install them both
+
+```bash
+yarn add -D webpack-dev-server html-webpack-plugin
+```
+
+We can now configure `cypress.json` to direct cypress to where are con=mponent test files are.
+
+```json
+{
+  "componentFolder": "components",
+  "testFiles": "**/*.spec.jsx"
+}
+```
+
+And update the `cypress/plugins/index.js` file to tell cypress how to start the dev-server.
+
+## Launch component testing
+
+This command will open the testing environment locally
+
+```bash
+yarn cy
+```
+
+This one will run all tests available and fail if one of the test fails
+
+```bash
+yarn cy:run
+```
+
 ## Getting Started
 
 First, run the development server:
