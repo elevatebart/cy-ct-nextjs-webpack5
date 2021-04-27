@@ -1,3 +1,5 @@
+# Cypress component testing within Vercel NextJs (with webpack 5 flag on)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 Cypress component testing was also added.
