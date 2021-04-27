@@ -1,0 +1,6 @@
+{
+  "componentFolder": "components",
+  "fixturesFolder": false,
+  "supportFile": false,
+  "testFiles": "**/*.spec.jsx"
+}
